@@ -32,7 +32,7 @@
     "build:antd": "cd packages/gears-antd && pnpm run build",
     "build": "pnpm run build:gears && pnpm run line && pnpm run build:antd",
     "docs": "NODE_OPTIONS=--openssl-legacy-provider dumi dev",
-    "docs:build": "dumi build",
+    "docs:build": "NODE_OPTIONS=--openssl-legacy-provider dumi build",
     "lint:es": "node_modules/.bin/eslint packages/**/src --quiet --ext ts,tsx,js,jsx",
     "lint:ts": "turbo run lint:ts",
     "lint": "turbo run lint:es && pnpm run lint:ts",
