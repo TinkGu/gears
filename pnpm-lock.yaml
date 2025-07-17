@@ -202,13 +202,13 @@ importers:
         specifier: ^2.2.6
         version: 2.2.6
       clipboard-polyfill:
-        specifier: 3.0.3
+        specifier: ^3.0.3
         version: 3.0.3
       dayjs:
         specifier: ^1.10.4
         version: 1.11.13
       react:
-        specifier: '>=17.0.1 || ^18.0.0'
+        specifier: '>=17.0.1'
         version: 17.0.2
       react-dom:
         specifier: '>=17.0.1'
