@@ -93,6 +93,7 @@ pnpm add 包名 -WD
 
 ## 发布命令
 
+- `release` 一键发布
 - `update` 根据 commit，自动对有改动的子项目进行版本号升级，读取 commit message 生成对应的 changelog 文档，并自动提交一个升级 commit。之后需要手动执行 `git push`。
 - `update:manual` 手动指定要升级的版本号，一般用于主动提升到一个大版本号的场景。
 - `publish:gears` 发布 `gears` 至 npm
