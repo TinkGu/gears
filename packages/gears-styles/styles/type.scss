@@ -1,0 +1,63 @@
+/** 排版相关、增强按钮、文字展示效果 */
+@import './variables.scss';
+
+:global {
+  // 清浮动
+  .clearfix:after {
+    content: '';
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+  }
+
+  .clearfix {
+    zoom: 1;
+  }
+
+  // 置灰、不重要的内容
+  .g-dark,
+  .g-dark-txt {
+    color: $secondary-color;
+  }
+
+  // 高亮、重要的内容
+  .g-active,
+  .g-active-txt {
+    color: $primary-color;
+  }
+
+  // 错误字体
+  .g-danger {
+    color: $danger-color;
+  }
+
+  // 链接、或文字按钮
+  .g-link,
+  .g-action-option {
+    color: $primary-color;
+    cursor: pointer;
+
+    &:hover {
+      color: $primary-hover-color;
+    }
+
+    &.disabled {
+      color: #00000040;
+      pointer-events: none;
+      cursor: not-allowed;
+
+      &:hover {
+        color: #00000040;
+      }
+    }
+  }
+
+  // 只有 hover 效果的文字按钮
+  .g-hover-link {
+    cursor: pointer;
+    &:hover {
+      color: $primary-hover-color;
+    }
+  }
+}

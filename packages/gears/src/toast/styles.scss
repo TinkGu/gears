@@ -1,0 +1,32 @@
+:global {
+  .mg-toast-wrapper {
+    position: fixed;
+  }
+  .mg-popup .mg-toast {
+    box-sizing: border-box;
+    padding: 8px 16px;
+    max-width: 260px;
+    min-height: 38px;
+    line-height: 22px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    word-break: break-all;
+
+    &.mg-toast-top {
+      top: 25%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .mg-toast-msg-nowrap {
+      margin: 0;
+      padding: 0;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+}

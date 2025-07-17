@@ -1,0 +1,89 @@
+/** 为 antd 提供预设的一些简单样式 */
+@import './variables.scss';
+
+:global {
+  /** 表单块标题 */
+  .g-form-title {
+    position: relative;
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    font-weight: 600;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 22px;
+      left: 4px;
+      width: calc(100% - 4px);
+      height: 8px;
+      background: $dark-color;
+      opacity: 0.3;
+    }
+
+    /** 小号，适用于副标题 */
+    &.sm {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 14px;
+
+      &::after {
+        bottom: 12px;
+        height: 6px;
+        opacity: 0.2;
+      }
+    }
+  }
+
+  /** 表单块标题，外容器，支持扩展 */
+  .g-form-title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .g-page-header.bordered + .g-form-title-wrapper {
+    .g-form-title {
+      padding-top: 10px;
+    }
+  }
+
+  .g-page-header.bordered + .g-form-title {
+    padding-top: 10px;
+  }
+
+  .ant-form {
+    .g-form-title:first-of-type {
+      padding-top: 10px;
+    }
+  }
+
+  // 表单 input 大小
+  .ant-input,
+  .ant-input-affix-wrapper,
+  .ant-select,
+  .ant-input-search,
+  .ant-input-number,
+  .ant-form-item .ant-select {
+    &.mg-input-sm {
+      width: 100px;
+    }
+
+    &.mg-input-s {
+      width: 160px;
+    }
+
+    &.mg-input-m {
+      width: 240px;
+    }
+
+    &.mg-input-l {
+      width: 320px;
+    }
+
+    &.mg-input-xl {
+      width: 480px;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+export * from './popup';
+export * from './portal';
+export * from './toast';
+// export * from './tags';
+export * from './async-component';
+// export * from './image';
+// export * from './image-preview';
+// export * from './checkbox';
+// export * from './create-page';
+export * from './loading';
+// export * from './switch';
+// export * from './page/container-result';
+// export * from './page';
+// export * from './button';
+export * from './modal';
+// export * from './video';
+// export * from './area';

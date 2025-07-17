@@ -1,0 +1,24 @@
+body p {
+  margin: 0;
+}
+
+.container {
+  button {
+    margin: 4px 0;
+  }
+}
+
+.scream {
+  position: relative;
+  animation: demo-toast-bounce 1s;
+}
+
+@keyframes demo-toast-bounce {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(3);
+  }
+}

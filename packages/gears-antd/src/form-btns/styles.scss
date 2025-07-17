@@ -1,0 +1,30 @@
+:global {
+  .mg-form-btns {
+    position: relative;
+    padding-bottom: 20px;
+    &.right {
+      text-align: right;
+    }
+
+    &.center {
+      text-align: center;
+    }
+
+    &.small {
+      .mg-form-btn {
+        min-width: auto;
+        height: 32px;
+      }
+    }
+  }
+
+  .mg-form-btn {
+    margin-bottom: 0;
+    min-width: 120px;
+    height: 36px;
+
+    & + .mg-form-btn {
+      margin-left: 8px;
+    }
+  }
+}

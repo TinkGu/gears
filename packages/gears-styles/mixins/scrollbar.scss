@@ -1,0 +1,30 @@
+/** 美化滚动条 */
+@mixin scrollbar($width: 8px, $color-thumb: rgba(42, 188, 252, 0.12)) {
+  &:hover {
+    &::-webkit-scrollbar-thumb {
+      width: $width;
+      background-color: $color-thumb;
+      border-radius: 4px;
+    }
+  }
+  &::-webkit-scrollbar {
+    width: $width;
+  }
+  &::-webkit-scrollbar-track {
+    display: none;
+  }
+  &::-webkit-scrollbar-button {
+    display: none;
+  }
+  &::-webkit-scrollbar-thumb {
+    width: $width;
+    background-color: transparent;
+    border-radius: 4px;
+  }
+  &::-webkit-scrollbar-track-piece {
+    display: none;
+  }
+  &::-webkit-scrollbar-corner {
+    display: none;
+  }
+}

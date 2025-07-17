@@ -1,0 +1,32 @@
+:global {
+  .mga-page-header {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    min-height: 68px;
+
+    &.bordered {
+      margin-bottom: 10px;
+      border-bottom: solid 1px #eee;
+    }
+  }
+
+  .mga-page-header__inner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mga-page-header__title {
+    position: relative;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .mga-page-header__extra {
+    margin: 0;
+    padding: 0;
+    color: #8590a6;
+  }
+}

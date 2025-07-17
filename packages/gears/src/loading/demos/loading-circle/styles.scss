@@ -1,0 +1,17 @@
+.button {
+  width: fit-content;
+  height: 40px;
+  padding: 0 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: content-box;
+  border-radius: 4px;
+  background: linear-gradient(270deg, #ff4c2e 0%, #ff6f57 100%);
+  color: #fff;
+
+  .loading {
+    margin-right: 10px;
+  }
+}
