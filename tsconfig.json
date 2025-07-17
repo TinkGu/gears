@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.setting.json",
+  "compilerOptions": {
+    "paths": {
+      "@tinks/gears": ["packages/gears/src"],
+      "@tinks/gears/*": ["packages/gears/src/*", "packages/gears/*"],
+      "@tinks/gears-antd": ["packages/gears-antd/src"],
+      "@tinks/gears-antd/*": ["packages/gears-antd/src/*"],
+      "@tinks/gears-styles": ["packages/gears-styles"],
+      "@tinks/gears-styles/*": ["packages/gears-styles/*"],
+      "demo-helper": ["packages/demo-helper/index.ts"]
+    }
+  }
+}

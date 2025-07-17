@@ -1,0 +1,19 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": [".eslintrc.js", ".prettierrc", "tsconfig.json", "tsconfig.setting.json", "tsconfig.build.json"],
+  "pipeline": {
+    "//#lint:es": {
+      "inputs": ["packages/**/*.ts", "packages/**/*.js", "packages/**/*.tsx"]
+    },
+    "lint:es": {
+      "dependsOn": ["//#lint:es"]
+    },
+    "lint:ts": {
+      "inputs": ["src/**/*.ts", "src/**/*.tsx"]
+    },
+    "clean": { "cache": false },
+    "publish": {
+      "cache": false
+    }
+  }
+}

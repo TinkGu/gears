@@ -1,0 +1,57 @@
+{
+  "name": "@tinks/gears-antd",
+  "version": "1.0.0",
+  "description": "后台公共组件库（antd）",
+  "author": "tlwrite@126.com",
+  "license": "MIT",
+  "sideEffects": false,
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "es",
+    "lib",
+    "ts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TinkGu/gears.git",
+    "directory": "packages/gears-antd"
+  },
+  "bugs": {
+    "url": "https://github.com/TinkGu/gears/issues"
+  },
+  "scripts": {
+    "build": "node ../../scripts/build/build.js",
+    "build:watch": "pnpm run build --watch",
+    "clean": "node ../../scripts/build/clean.js",
+    "lint:ts": "tsc -p tsconfig.json --noEmit",
+    "publish": "node ../../scripts/publish"
+  },
+  "dependencies": {
+    "@tinks/xeno": "^1.0.0",
+    "clipboard-polyfill": "^3.0.3",
+    "react-sortable-hoc": "2.0.0",
+    "style-inject": "0.3.0"
+  },
+  "peerDependencies": {
+    "@ant-design/icons": "^4.6.2",
+    "@ant-design/pro-table": "^2.49.0",
+    "antd": "^4.16.1 || ^5.0.0",
+    "classnames": "^2.2.6",
+    "dayjs": "^1.10.4",
+    "react": ">=17.0.1",
+    "react-dom": ">=17.0.1",
+    "use-atom-view": "^1.1.0"
+  },
+  "devDependencies": {
+    "@ant-design/icons": "^4.6.2",
+    "@ant-design/pro-table": "^2.49.0",
+    "@types/react-color": "^3.0.5"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

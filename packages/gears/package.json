@@ -1,0 +1,46 @@
+{
+  "name": "@tinks/gears",
+  "version": "1.0.0",
+  "description": "tinks 前端组件库",
+  "author": "tlwrite@126.com",
+  "license": "MIT",
+  "sideEffects": false,
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "es",
+    "lib",
+    "ts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TinkGu/gears.git",
+    "directory": "packages/gears"
+  },
+  "bugs": {
+    "url": "https://github.com/TinkGu/gears/issues"
+  },
+  "scripts": {
+    "build": "node ../../scripts/build/build.js",
+    "build:watch": "yarn run build --watch",
+    "clean": "node ../../scripts/build/clean.js",
+    "lint:ts": "tsc -p tsconfig.json --noEmit",
+    "publish": "node ../../scripts/publish"
+  },
+  "dependencies": {
+    "@babel/runtime": "7.18.3",
+    "style-inject": "0.3.0"
+  },
+  "peerDependencies": {
+    "@tinks/xeno": "^1.0.0",
+    "classnames": "^2.2.6",
+    "react": ">=17.0.1",
+    "react-dom": ">=17.0.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

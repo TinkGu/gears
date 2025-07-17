@@ -1,0 +1,26 @@
+{
+  "name": "@tinks/gears-styles",
+  "version": "1.0.0",
+  "description": "前端公共样式",
+  "author": "tlwrite@126.com",
+  "license": "MIT",
+  "sideEffects": false,
+  "main": "styles/index.scss",
+  "style": "styles/index.scss",
+  "files": [
+    "mixins",
+    "styles"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TinkGu/gears.git",
+    "directory": "packages/gears-styles"
+  },
+  "bugs": {
+    "url": "https://github.com/TinkGu/gears/issues"
+  },
+  "scripts": {
+    "noop": "echo \" \"",
+    "publish": "node ../../scripts/publish"
+  }
+}

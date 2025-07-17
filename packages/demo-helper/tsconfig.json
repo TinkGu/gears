@@ -1,0 +1,4 @@
+{
+  "extends": "../../tsconfig.setting.json",
+  "include": ["../../types"]
+}

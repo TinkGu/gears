@@ -1,0 +1,40 @@
+node_modules
+design
+packages/test
+dist
+lib/
+es/
+es-style/
+ts/
+temp
+package-lock.json
+.turbo
+.mfsu-dev
+
+# system temp file
+.version
+$RECYCLE.BIN/
+.DS_Store
+*.log
+**/dist/**
+
+# ide files
+.idea
+.vuerc
+
+# vscode
+.vscode
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+.history
+.changelog
+
+# docs
+.umi
+.umi-production
+.umi-test
+dist_docs/
+.wip

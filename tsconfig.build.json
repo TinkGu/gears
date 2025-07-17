@@ -1,0 +1,4 @@
+{
+  "extends": "./tsconfig.setting.json",
+  "exclude": ["node_modules", "lib", "es", "dist", "typings", "test", "**/__test__", "**/__tests__", "**/demos", "**/demo"]
+}
