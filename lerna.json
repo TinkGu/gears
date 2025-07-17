@@ -1,6 +1,8 @@
 {
-  "version": "1.0.0",
-  "packages": ["packages/*"],
+  "version": "1.1.0",
+  "packages": [
+    "packages/*"
+  ],
   "npmClient": "yarn",
   "useWorkspaces": true,
   "command": {
@@ -10,7 +12,15 @@
       "conventionalCommits": true
     },
     "publish": {
-      "ignoreChanges": ["docs/**", "dist_docs/**", "scripts/**", ".dumi/**", ".umirc.ts", "**/tsconfig.json", "**/README.md"],
+      "ignoreChanges": [
+        "docs/**",
+        "dist_docs/**",
+        "scripts/**",
+        ".dumi/**",
+        ".umirc.ts",
+        "**/tsconfig.json",
+        "**/README.md"
+      ],
       "message": "chore: publish",
       "registry": "https://registry.npmjs.org/"
     }
