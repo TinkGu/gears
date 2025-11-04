@@ -136,7 +136,11 @@ export const BaseModal = memo(function BaseModalInner({
   }, [onCancel, onDestroy]);
 
   return (
-    <BasePopup wrapperClassName={cx(prefix, { [`${prefix}-halfscreen`]: position === 'bottom' })} position={position} {...popupProps}>
+    <BasePopup
+      wrapperClassName={cx(prefix, { [`${prefix}-halfscreen`]: position === 'bottom' }, wrapperClassName)}
+      position={position}
+      {...popupProps}
+    >
       <div className={cx(`${prefix}-wrapper`)}>
         <div className={cx(`${prefix}-body`)}>
           {!!warning && !icon && <WarningIcon />}
